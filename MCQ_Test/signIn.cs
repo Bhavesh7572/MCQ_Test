@@ -28,6 +28,8 @@ namespace MCQ_Test
             button1.BackColor = Color.FromArgb(80, 80, 129);
             textBox1.ForeColor = Color.FromArgb(39, 39, 87);
             textBox2.ForeColor = Color.FromArgb(39, 39, 87);
+            confirmPasswordTextBox.ForeColor = Color.FromArgb(39, 39, 87);
+            label5.ForeColor = Color.Red;
         }
 
         private void Button2_Click_1(object sender, EventArgs e)
@@ -67,6 +69,10 @@ namespace MCQ_Test
                 {
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Registered successfully!");
+                    cleardt();
+                    login loginpg = new login();
+                    this.Hide();
+                    loginpg.Show();
 
                 }
                 catch (SqlException ex)
@@ -82,6 +88,26 @@ namespace MCQ_Test
                 }
             }
             conn.Close();
+        }
+        private void cleardt()
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            confirmPasswordTextBox.Clear();
+        }
+
+        private void SignIn_Load(object sender, EventArgs e)
+        {
+            MaximizeBox = false;
+        }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+            /*string pass = textBox2.Text.Trim();
+            if (pass.Length < 5)
+                label5.Text = "Password must be at least 5 characters long.";
+            else
+                label5.Text = "";*/
         }
     }
 }

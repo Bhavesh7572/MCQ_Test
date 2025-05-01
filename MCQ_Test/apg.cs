@@ -20,9 +20,9 @@ namespace MCQ_Test
         public apg()
         {
             InitializeComponent();
+            Design();
             ThemeManager.SaveOriginalColors(this); // Save original colors when form is initialized
             ThemeManager.ApplyTheme(this);
-            Design();
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -77,6 +77,22 @@ namespace MCQ_Test
         {
             this.BackColor = Color.FromArgb(80, 80, 129);
             this.ForeColor = Color.FromArgb(255, 255, 240);
+            panel1.ForeColor = Color.FromArgb(255, 255, 240);
+            panel2.ForeColor = Color.FromArgb(255, 255, 240);
+            panel3.ForeColor = Color.FromArgb(255, 255, 240);
+            label1.ForeColor = Color.FromArgb(255, 255, 240);
+            label2.ForeColor = Color.FromArgb(255, 255, 240);
+            label3.ForeColor = Color.FromArgb(255, 255, 240);
+            label4.ForeColor = Color.FromArgb(255, 255, 240);
+            label5.ForeColor = Color.FromArgb(255, 255, 240);
+            label6.ForeColor = Color.FromArgb(255, 255, 240);
+            label7.ForeColor = Color.FromArgb(255, 255, 240);
+            label8.ForeColor = Color.FromArgb(255, 255, 240);
+            radioButton1.ForeColor = Color.FromArgb(255, 255, 240);
+            radioButton2.ForeColor = Color.FromArgb(255, 255, 240);
+            radioButton3.ForeColor = Color.FromArgb(255, 255, 240);
+            radioButton4.ForeColor = Color.FromArgb(255, 255, 240);
+            label9.ForeColor = Color.FromArgb(255, 255, 240);
             comboBoxCategory.ForeColor = Color.FromArgb(39, 39, 87);
             button1.BackColor = Color.FromArgb(80, 80, 129);
             button1.ForeColor = Color.Lavender;

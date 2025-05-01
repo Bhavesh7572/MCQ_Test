@@ -21,13 +21,13 @@ namespace MCQ_Test
         }
         private void design()
         {
+            this.ShowIcon = false;
             this.BackColor = Color.FromArgb(134, 134, 172);
             this.ForeColor = Color.FromArgb(255, 255, 240);
             button2.BackColor = Color.FromArgb(80, 80, 129);
             log.BackColor = Color.FromArgb(80,80,129);
             unm.ForeColor = Color.FromArgb(39, 39, 87);
             pss.ForeColor = Color.FromArgb(39, 39, 87);
-            toppn.BackColor = Color.Gray;
             pss.UseSystemPasswordChar = true;
             MaximizeBox = false;
 
@@ -81,15 +81,9 @@ namespace MCQ_Test
         {
             pss.UseSystemPasswordChar = !showPasswordCheckBox.Checked;
         }
-
-        private void Button1_Click(object sender, EventArgs e)
+        private void Label1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
 
-        private void PictureBox1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

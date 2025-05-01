@@ -110,11 +110,10 @@ namespace MCQ_Test
 
             foreach (var q in questions)
             {
-                int que = 1;
-                doc.Add(new Paragraph($"Q.{que}: {q.Text}"));
+                doc.Add(new Paragraph($"Q: {q.Text}"));
                 doc.Add(new Paragraph($"Your Answer: {q.UserAnswer ?? "No Answer"}"));
                 doc.Add(new Paragraph($"Correct Answer: {q.CorrectAnswerText}"));
-                doc.Add(new Paragraph($"Result: {(q.IsCorrect ? "✔ Correct" : "✖ Wrong")}\n\n"));
+                doc.Add(new Paragraph($"Result: {(q.IsCorrect ? "✔ Correct" : "✖ Wrong")}\n\n\n"));
             }
             doc.Close();
             MessageBox.Show("PDF saved to Desktop!");
@@ -200,17 +199,17 @@ namespace MCQ_Test
             var q = questions[currentQuestionIndex];
             q.UserAnswer = selectedText;
 
-            if (q.IsCorrect)
+            score++;
+            /*if (q.IsCorrect)
             {
                 SoundPlayer player = new SoundPlayer(@"C:\Users\ratho\source\repos\MCQ_Test\MCQ_Test\correct-6033.wav");
                 player.Play(); // Or .PlayLooping(), .PlaySync()
-                score++;
             }
             else
             {
                 SoundPlayer player = new SoundPlayer(@"C:\Users\ratho\source\repos\MCQ_Test\MCQ_Test\buzzer-or-wrong-answer-20582.wav");
                 player.Play();
-            }
+            }*/
         }
 
         private void BtnDownloadPdf_Click(object sender, EventArgs e)

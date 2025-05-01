@@ -90,7 +90,7 @@ namespace MCQ_Test
 
         private void Adminlog_Load(object sender, EventArgs e)
         {
-            
+            MaximizeBox = false;
         }
     }
 }

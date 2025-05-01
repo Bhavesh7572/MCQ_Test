@@ -93,6 +93,16 @@ namespace MCQ_Test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_04_30_at_01_58_54_72550768 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-04-30 at 01.58.54_72550768", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap window_close_regular_24 {
             get {
                 object obj = ResourceManager.GetObject("window-close-regular-24", resourceCulture);

@@ -94,12 +94,6 @@
     <Compile Include="class1.Designer.cs">
       <DependentUpon>class1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,9 +152,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="class1.resx">
       <DependentUpon>class1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -228,9 +219,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>question.mdf</DependentUpon>
     </Content>
-    <None Include="Resources\images-removebg-preview.png" />
-    <None Include="Resources\DBR_Logo-removebg-preview.png" />
-    <None Include="Resources\window-close-regular-241.png" />
+    <Content Include="Resources\DBR_Logo-removebg-preview.png" />
+    <Content Include="Resources\images-removebg-preview.png" />
+    <Content Include="Resources\WhatsApp Image 2025-04-30 at 01.58.54_72550768.png" />
+    <Content Include="Resources\window-close-regular-241.png" />
     <None Include="Resources\quizImage2-CV13vzMD.png" />
   </ItemGroup>
   <ItemGroup>
